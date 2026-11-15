@@ -21,7 +21,7 @@ On GitHub, create a **public** empty repository named `devops-college-project`. 
 git init -b main
 git add .
 git commit -m "Create Jenkins AWS deployment project"
-git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/devops-college-project.git
+git remote add origin https://github.com/mridulkhanna2006pixel/devops-college-project.git
 git push -u origin main
 ```
 
@@ -97,7 +97,7 @@ Alternatively, allow the job to use its standard workspace when the job is named
 
 ```bash
 sudo mkdir -p /var/lib/jenkins/workspace/devops-college-project
-sudo git clone https://github.com/<YOUR_GITHUB_USERNAME>/devops-college-project.git /var/lib/jenkins/workspace/devops-college-project
+sudo git clone https://github.com/mridulkhanna2006pixel/devops-college-project.git /var/lib/jenkins/workspace/devops-college-project
 sudo chown -R jenkins:jenkins /var/lib/jenkins/workspace/devops-college-project
 ```
 
@@ -129,7 +129,7 @@ In Jenkins, choose **New Item**, enter `devops-college-project`, select **Pipeli
 
 1. **Definition:** Pipeline script from SCM.
 2. **SCM:** Git.
-3. **Repository URL:** `https://github.com/<YOUR_GITHUB_USERNAME>/devops-college-project.git`.
+3. **Repository URL:** `https://github.com/mridulkhanna2006pixel/devops-college-project.git`.
 4. **Credentials:** none for a public repository. For a private repository, create a fine-grained token with read-only repository contents or a read-only deploy key in **Manage Jenkins → Credentials**, then select it here. Do not place credentials in the Jenkinsfile or Git URL.
 5. **Branch specifier:** `*/main`.
 6. **Script Path:** `Jenkinsfile`.
