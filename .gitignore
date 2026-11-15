@@ -1,0 +1,11 @@
+# Local editor and operating system files
+.DS_Store
+*.swp
+*.swo
+.vscode/
+.idea/
+# Local deployment output and private credentials
+.env
+*.pem
+*.key
+*.log
